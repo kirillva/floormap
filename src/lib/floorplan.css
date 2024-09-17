@@ -1,0 +1,51 @@
+:root {
+    --spectrum-global-color-gray-400: #d3d3d3;
+    --primaryColor: #1473e6;
+}
+
+g.polygon > polygon {
+    fill: var(--spectrum-global-color-gray-400);
+    fill-opacity: 0.2;
+}
+
+g.polygon > polygon.selected {
+    fill: var(--primaryColor);
+}
+
+g.polygon > line {
+    stroke: #8f8f8f;
+    stroke-width: 4px;
+}
+
+g.polygon > circle {
+    cursor: pointer;
+    stroke: #8f8f8f;
+    stroke-width: 8px;
+    fill-opacity: 0.2;
+}
+
+g.polygon.selected > polygon {
+    fill: var(--primaryColor);
+}
+
+g.polygon > circle.creating {
+    stroke: #af0e0e;
+}
+
+g.polygon > circle:hover, g.polygon > line:hover {
+    cursor: pointer;
+    stroke: var(--primaryColor)
+}
+
+.sensor.selected > svg > .background {
+    fill: #0060A9
+}
+
+.sensor > svg > .background {
+    fill: #6d6d6d
+}
+
+.evacuation {
+    stroke: #3c7d27;
+    stroke-width: 3px;
+}
