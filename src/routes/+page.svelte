@@ -1,7 +1,7 @@
 <script>
-  import Map from "../lib/Map.svelte";
+  import Map from "../lib/floormap/Map.svelte";
   import { setContext } from "svelte";
-  import example from "../lib/example.json";
+  import example from "../lib/floormap/example.json";
 
   setContext("sdk", {
     styleable: {},
